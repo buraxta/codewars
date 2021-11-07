@@ -1,0 +1,12 @@
+public class Kata {
+
+  public static String solution(String str) {
+   char[] newStr = str.toCharArray();
+        String result = "";
+        for(int i = str.length(); i > 0; i--){
+            result += newStr[i-1];
+        }
+    return result;
+  }
+
+}

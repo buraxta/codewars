@@ -1,0 +1,12 @@
+public class Solution{
+  public static String doubleChar(String s){
+        String result = "";
+        char arr[] = s.toCharArray();
+        for(int i = 0; i<s.length(); i++){
+            char c = arr[i];
+            result += c;
+            result += c;
+        }
+    return result;
+    }
+}

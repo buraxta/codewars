@@ -1,0 +1,15 @@
+public class Sum {
+
+  public static int arrayPlusArray(int[] arr1, int[] arr2) {
+    int result = 0;
+    for(int i : arr1){
+        result += i;
+    }
+    for(int i : arr2){
+        result += i;
+    }
+    
+    return result;
+  }
+
+}

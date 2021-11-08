@@ -1,0 +1,51 @@
+public class Kata
+{
+    public static int expressionsMatter(int a, int b, int c){
+        int result = 0;
+        if(a==1 && b==1 && c==1){
+            result = a+b+c;
+        }
+        else if(a == 1 && b == 1){
+            result = (a+b) * c;            
+        }
+        else if(a == 1 && c == 1){
+            result = a+c+b;            
+        }
+        else if(b == 1 && c == 1){
+            result = (b+c) * a;            
+        }
+        else if(a == 1 && b<c){
+            result = (a+b) * c;            
+        }
+        else if(a == 1 && b>c){
+            result = (a+b) * c;            
+        }
+        else if(a == 1 && b==c){
+            result = (a+b) * c;            
+        }
+        else if(b == 1 && a>c){
+            result = (b+c) * a;            
+        }
+        else if(b == 1 && a<c){
+            result = (b+a) * c;            
+        }
+        else if(b == 1 && a==c){
+            result = (b+a) * c;            
+        }
+        else if(c == 1 && a<b){
+            result = (b+c)*a;            
+        }
+        else if(c == 1 && a>b){
+            result = (b+c) * a;            
+        }
+        else if(c == 1 && a==b){
+            result = (b+c) * a;            
+        }
+        else{
+            result= a*b*c;
+        }
+        
+    
+        return result;
+    }
+}

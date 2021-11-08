@@ -1,0 +1,19 @@
+public class TrafficLights {
+
+  public static String updateLight(String current) {
+        final String [] COLORS = {"green","yellow","red"};
+        String newValue = "";
+        
+            if(current == "red"){
+                newValue = "green";
+            }
+            else if(current == "yellow"){
+            newValue = "red";
+            }
+            else if(current == "green"){
+            newValue = "yellow";}
+    
+    return newValue;
+  }
+  
+}

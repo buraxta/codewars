@@ -1,0 +1,6 @@
+public static String howMuchILoveYou(int n) {
+    String[] result = {"I love you", "a little", "a lot", "passionately", "madly", "not at all"};
+      n = n > 6 ? n%6 : n;
+      n = n==0?6:n;
+    return result[n-1];
+    }

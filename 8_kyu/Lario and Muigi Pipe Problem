@@ -1,0 +1,14 @@
+public class Kata {
+    public static int[] pipeFix(int[] numbers) {
+     int startPoint = numbers[0];  
+     int endPoint = numbers[numbers.length-1];  
+     int[] created = new int[endPoint-startPoint+1]; 
+     for(int i = 0; startPoint<=endPoint; i++){
+         created[i] = startPoint++;
+     }
+     for(int i = 0; i<=created.length-1; i++){
+         System.out.println(created[i]);
+     }
+     return created;
+  }
+}
